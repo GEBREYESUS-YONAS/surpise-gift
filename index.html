@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feruza Gift Delivery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Feruza Gift Delivery</a>
+            <ul class="nav-links">
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#flowers">Flowers</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            
+            <h1>Surprise Your Loved Ones in Kampala</h1>
+            <h2>ሳርፕራይዝ ህያብ ናብ ፈተውትኩም ኣብ ካምፓላ ዩጋንድ</h2>
+            <p>Send a gift they'll never forget!</p>
+            <a href="#packages" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <main>
+        <!-- Packages Section -->
+        <section id="packages" class="product-section">
+            <h2>Special Packages / ዝበለጹ ህያባት</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images\bday.jpg" alt="Birthday Package">
+                    <h3>Birthday Package/ንዕለተ ልደት</h3>
+                    <p>Make their birthday unforgettable.</p>
+                    <button onclick="addToCart('Birthday Package')">Order</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/wg.jpg" alt="Wedding Package">
+                    <h3>Wedding Package/ንመርዓውቲ</h3>
+                    <p>Celebrate their wedding day.</p>
+                    <button onclick="addToCart('Wedding Package')">Order</button>
+                </div>
+                <div class="product-item">
+                    <img src="images\vday.jpg" alt="Anniversary Package">
+                    <h3>Anniversary Package/ ን ኣኒቨርሳሪ</h3>
+                    <p>Celebrate their special day.</p>
+                    <button onclick="addToCart('Anniversary Package')">Order</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/mm.webp" alt="Marry Me Package">
+                    <h3>Marry Me Package/ን ሕቶ ናይ መርዓ</h3>
+                    <p>Make your proposal special.</p>
+                    <button onclick="addToCart('Marry Me Package')">Order</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cakes Section -->
+        <section id="cakes" class="product-section">
+            <h2>Cakes/ዝተፈላለዩ ቶርታ</h2>
+            <div class="product-grid">
+                <!-- 6+ rows and columns of cakes -->
+                <div class="product-item">
+                    <img src="images/cake1.webp" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Delicious chocolate cake for any occasion.</p>
+                    <button onclick="addToCart('Chocolate Cake')">Order</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/cake2.webp" alt="Vanilla Cake">
+                    <h3>Vanilla Cake</h3>
+                    <p>Classic vanilla cake, perfect for celebrations.</p>
+                    <button onclick="addToCart('Vanilla Cake')">Order</button>
+                </div>
+                <!-- Add more cake items here in rows and columns -->
+            </div>
+        </section>
+
+        <!-- Flowers Section -->
+        <section id="flowers" class="product-section">
+            <h2>Flowers/ ዝተፈላለዩ ዕንባባታት</h2>
+            <div class="product-grid">
+                <!-- 6+ rows and columns of flowers -->
+                <div class="product-item">
+                    <img src="images/flower1.webp" alt="Roses">
+                    <h3>Roses</h3>
+                    <p>Beautiful roses for any occasion.</p>
+                    <button onclick="addToCart('Roses')">Order</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/flower2.webp" alt="Lilies">
+                    <h3>Lilies</h3>
+                    <p>Elegant lilies for a special touch.</p>
+                    <button onclick="addToCart('Lilies')">Order</button>
+                </div>
+                <!-- Add more flower items here in rows and columns -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Feruza Surprise Gift. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
