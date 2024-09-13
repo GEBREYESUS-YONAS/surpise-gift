@@ -13,6 +13,52 @@ header {
     color: #ff0;
     padding: 20px;
 }
+/* Hide the hamburger menu on larger screens */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #ff0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile Menu Styles */
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.nav-links.active li {
+    display: block;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 nav {
     display: flex;

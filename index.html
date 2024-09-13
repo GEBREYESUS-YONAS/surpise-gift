@@ -10,6 +10,8 @@
     <header>
         <nav>
             <a href="index.html" class="logo">Feruza Gift Delivery</a>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+
             <ul class="nav-links">
                 <li><a href="#packages">Packages</a></li>
                 <li><a href="#cakes">Cakes</a></li>
@@ -111,5 +113,11 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
